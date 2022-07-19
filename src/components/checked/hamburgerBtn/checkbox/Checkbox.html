@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[id='chkbox'] {
+      display: none;
+    }
+    input[id='chkbox'] + label em {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      background: url(./bg_chkbox.gif) 0 0 no-repeat;
+      vertical-align: middle;
+    }
+    input[id="chkbox"]:checked + label em {
+      background-position: -38px 0;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="chkbox">
+  <label for="chkbox"><em></em>체크합니다</label>
+</body>
+</html>

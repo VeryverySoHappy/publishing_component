@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client';
-import LightHover from './components/hover/lightHover/lightHover';
+import CheckBox from './components/checked/checkbox/Checkbox';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-      <LightHover></LightHover>
+      <CheckBox></CheckBox>
     </>
 );

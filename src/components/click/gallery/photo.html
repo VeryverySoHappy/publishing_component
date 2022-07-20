@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photo</title>
+  <link rel="stylesheet" href="./photo.css">
+</head>
+<body>
+  <div class="wrap">
+    <h3>photo</h3>
+    <ul>
+      <li><a href="./img/Rectangle 1.png" title="사각형1" onclick="showPic(this); return false"><img src="./img/Rectangle 1.png" alt=""></a></li>
+      <li><a href="./img/Rectangle 2.png" title="사각형2" onclick="showPic(this); return false"><img src="./img/Rectangle 2.png" alt=""></a></li>
+      <li><a href="./img/Rectangle 3.png" title="사각형3" onclick="showPic(this); return false"><img src="./img/Rectangle 3.png" alt=""></a></li>
+      <li><a href="./img/Rectangle 4.png" title="사각형4" onclick="showPic(this); return false"><img src="./img/Rectangle 4.png" alt=""></a></li>
+      <li><a href="./img/Rectangle 5.png" title="사각형5" onclick="showPic(this); return false"><img src="./img/Rectangle 5.png" alt=""></a></li>
+      <li><a href="./img/Rectangle 6.png" title="사각형6" onclick="showPic(this); return false"><img src="./img/Rectangle 6.png" alt=""></a></li>
+    </ul>
+    <div class="photo">
+      <img src="./img/Rectangle 1.png" alt="" id="photo">
+    </div>
+    <div id="text" class="text">www.naver.com</div>
+  </div>
+</body>
+<script>
+  function showPic(whichPic) {
+    var source = whichPic.getAttribute('href')
+    var photo = document.getElementById('photo')
+    photo.setAttribute('src', source)
+    var title = whichPic.getAttribute('title')
+    var text = document.getElementById('text')
+    text.firstChild.nodeValue=title;
+  }
+</script>
+</html>

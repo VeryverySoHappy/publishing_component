@@ -1,0 +1,42 @@
+body, div, h3, input, img, dl, dt, dd, ul. li, a {margin: 0; padding: 0;}
+body {
+  font-size: 12px;
+  color: #222;
+}
+img {border: none;}
+a {text-decoration: none;}
+.wrap {
+  width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.typeBox {
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+.typeBox span {
+  display: inline-block;
+  padding: 20px 0 15px 0;
+}
+img, input {
+  vertical-align: middle;
+}
+.info {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.okBtn {
+  text-align: center;
+  margin-top: 15px;
+  background: #FF7E7E;
+  width: 150px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.okBtn a {
+  color: #fff;
+}
